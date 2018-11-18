@@ -1,6 +1,7 @@
 resource "google_container_cluster" "fabg" {
   name               = "fabg"
-  min_master_version = "1.10.5-gke.4"
+  min_master_version = "1.11.2-gke.18"
+  node_version       = "1.11.2-gke.18"
   zone               = "${var.zone}"
   initial_node_count = "${var.min_node_count}"
   network            = "${var.vpc_network_fabg_self_link}"
@@ -8,7 +9,7 @@ resource "google_container_cluster" "fabg" {
 
   maintenance_policy {
     daily_maintenance_window {
-      start_time = "02:00"
+      start_time = "05:00"
     }
   }
 
@@ -48,6 +49,7 @@ resource "google_container_cluster" "fabg" {
 resource "google_container_node_pool" "fabg-np" {
   name               = "fabg-np"
   zone               = "${var.zone}"
+  version            = "1.11.2-gke.18"
   cluster            = "${google_container_cluster.fabg.name}"
   initial_node_count = "${var.min_node_count}"
 
