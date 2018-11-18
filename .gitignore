@@ -1,0 +1,22 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.d
+.terraform
+/credentials/outputs.tf
+/tmp
+
+/gcp/asia-northeast1/boot-ads-.key
+/gcp/asia-northeast1/boot-ads-.cert
+
+README.md
