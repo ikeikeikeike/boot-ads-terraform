@@ -16,6 +16,7 @@ terraform.tfstate.d
 /credentials/outputs.tf
 /tmp
 
+/gcp/asia-northeast1/credentials_modules.tf
 /gcp/asia-northeast1/boot-ads-.key
 /gcp/asia-northeast1/boot-ads-.cert
 
