@@ -1,4 +1,7 @@
-#  Local .terraform directories
+syntax: glob
+
+.git
+
 **/.terraform/*
 
 # .tfstate files
@@ -13,14 +16,4 @@ terraform.tfstate
 terraform.tfstate.backup
 terraform.tfstate.d
 .terraform
-/credentials/outputs.tf
 /tmp
-
-/gcp/asia-northeast1/boot-ads-.key
-/gcp/asia-northeast1/boot-ads-.cert
-
-README.md
-
-/modules/gcp/dns/fabg.tf
-
-.hg
