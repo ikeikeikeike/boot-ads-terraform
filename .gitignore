@@ -17,8 +17,8 @@ terraform.tfstate.d
 /tmp
 
 /gcp/asia-northeast1/credentials_modules.tf
-/gcp/asia-northeast1/boot-ads-.key
-/gcp/asia-northeast1/boot-ads-.cert
+/gcp/asia-northeast1/fabg.cert
+/gcp/asia-northeast1/fabg.key
 
 README.md
 
