@@ -18,6 +18,7 @@ terraform.tfstate.d
 
 /gcp/asia-northeast1/credentials_modules.tf
 /gcp/asia-northeast1/fabg.cert
+/gcp/asia-northeast1/fabg.chain
 /gcp/asia-northeast1/fabg.key
 
 README.md
