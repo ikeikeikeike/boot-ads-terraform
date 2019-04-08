@@ -26,3 +26,5 @@ README.md
 /modules/gcp/dns/fabg.tf
 
 .hg
+
+/*/*/secret
