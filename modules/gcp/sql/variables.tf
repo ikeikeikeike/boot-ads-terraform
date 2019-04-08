@@ -1,3 +1,3 @@
 variable "region" {}
-variable "fabg_username" {}
-variable "fabg_userpass" {}
+variable "fabg_dbuser" {}
+variable "fabg_dbpass" {}

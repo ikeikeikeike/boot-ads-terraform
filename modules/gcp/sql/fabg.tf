@@ -33,7 +33,7 @@ resource "google_sql_database_instance" "fabg" {
 resource "google_sql_user" "fabg" {
   instance  = "${google_sql_database_instance.fabg.name}"
   count    = 1
-  name     = "${var.fabg_username}"
-  password = "${var.fabg_userpass}"
+  name     = "${var.fabg_dbuser}"
+  password = "${var.fabg_dbpass}"
   host     = "%"
 }

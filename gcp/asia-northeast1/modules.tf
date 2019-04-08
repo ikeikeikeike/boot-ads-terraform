@@ -25,3 +25,11 @@ module "dns" {
   google_project                                = "${var.google_project}"
   vpc_global_address_fabg_lb_address            = "${module.vpc.global_address_fabg_lb_address}"
 }
+
+module "sql" {
+  source = "../../modules/gcp/sql"
+
+  region                                        = "${lookup(var.region, "${terraform.env}")}"
+  fabg_dbuser                                   = "${var.fabg_dbuser}"
+  fabg_dbpass                                   = "${var.fabg_dbpass}"
+}

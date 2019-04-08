@@ -1,5 +1,8 @@
 variable "google_project" {}
 
+variable "fabg_dbuser" {}
+variable "fabg_dbpass" {}
+
 variable "zone" {
   default = {
     default           = "asia-southeast1-c"
