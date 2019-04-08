@@ -8,7 +8,7 @@ resource "tls_private_key" "fabg" {
 
 resource "acme_registration" "fabg" {
   account_key_pem = "${tls_private_key.fabg.private_key_pem}"
-  email_address   = "jp.ne.co.jp@gmail.com"
+  email_address   = "sarcasm.link@gmail.com"
 }
 
 resource "acme_certificate" "fabg" {
